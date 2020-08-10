@@ -1,0 +1,272 @@
+<!-- 
+1. open in a new tab.
+2. Same background image, logo
+3. Remove form from front.
+4. Use form border properties for about us section.
+5. Enter content for about us section.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness_Club/about_us</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Righteous", cursive;
+      color: whitesmoke;
+      margin: 0px;
+      padding: 0px;
+      background: url("images/p2.jpeg");
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .left {
+      font-size: 15px;
+      display: inline-block;
+      left: 20px;
+      /*border: 2px solid red;*/
+      height: 90px;
+      width: 130px;
+      top: 8px;
+      position: absolute;
+    }
+
+    .left img {
+      width: 120px;
+      filter: invert(100%);
+    }
+    .left div {
+      text-align: center;
+      line-height: 10px;
+    }
+
+    .left div:hover {
+      color: grey;
+    }
+
+    .mid {
+      display: block;
+      width: 33%;
+      margin: 20px auto;
+      /*border: 2px solid green;*/
+      height: 50px;
+      width: 500px;
+      top: 20px;
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      /*border: 2px solid white;*/
+      height: 40px;
+      width: 270px;
+    }
+
+    .btn {
+      margin: 0px 9px;
+      color: whitesmoke;
+      background-color: black;
+      padding: 8px 20px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: "Righteous", cursive;
+    }
+
+    .btn:hover {
+      background-color: rgb(180, 170, 170);
+      text-decoration: underline;
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      font-size: 16px;
+      display: inline-block;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 20px 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    .container {
+      border: 2px solid lightskyblue;
+      height: 650px;
+      margin: 40px 30px;
+      padding: 75px;
+      width: 84%;
+      border-radius: 28px;
+    }
+
+    .container h3 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .container h3:hover {
+      color: grey;
+    }
+
+    .container button {
+      display: block;
+      width: 23%;
+      margin: auto;
+    }
+
+    .left1 {
+      /* border: 2px solid white; */
+      width: 230px;
+      margin-left: -10px;
+      height: 800px;
+      text-align: left;
+    }
+
+    .second {
+      /* border: 2px solid white; */
+      width: 230px;
+      margin-left: 300px;
+      height: 800px;
+      margin-top: -800px;
+      text-align: left;
+    }
+
+    .center {
+      /* border: 2px solid white; */
+      width: 230px;
+      margin-left: 600px;
+      margin-top: -800px;
+      height: 800px;
+      text-align: center;
+    }
+
+    .right1 {
+      /* border: 2px solid white; */
+      width: 230px;
+      margin-left: 900px;
+      margin-top: -800px;
+      height: 800px;
+      text-align: center;
+    }
+
+    #programs_header {
+      margin-top: -10px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <header class="header">
+      <!-- div for logo -->
+
+      <div class="left">
+        <img src="images/logo.png" alt="" />
+        <div>Fitness_Club</div>
+      </div>
+
+      <!-- div for navbar -->
+
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="home.html" target="blank">Home</a></li>
+          <li><a href="about_us.html " target="blank">About us</a></li>
+          <li><a href="our_programs.html" target="blank">Our Programs</a></li>
+          <li><a href="contact_us.html" target="blank">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- div for buttons -->
+
+      <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h3 id="programs_header">Choose what suits you best!!!</h3>
+      <form action="noaction.php"></form>
+      <div class="left1">
+        <img src="images/excercise1.jpg" alt="" />
+        <p>
+          Hammer Strength is the number one brand of plate-loaded strength
+          equipment in the world and comes with many proven benefits.
+        </p>
+
+        <p>
+          Benefits of Hammer Strength machines:
+        </p>
+        <ul>
+          <li>
+            Trains one and half times harder than any other machine. Allows
+            46%-56% more recruitment of muscle fibres. Gives 46% better results.
+          </li>
+          <li>
+            Allows 46%-56% more recruitment of muscle fibres.
+          </li>
+          <li>
+            Gives 46% better results.
+          </li>
+        </ul>
+      </div>
+
+      <div class="second">
+        <img src="images/excercise2.jpg" alt="" />
+        <p>
+          You can get more variations into your routine workout when you join
+          our group classes. The main focus of the group classes is: functional
+          fitness, aerobic exercises, strength training, fun & dancing,
+          flexibility training, body and mind training. Tone your body and
+          center your mind, all along while having fun. Enjoy your work out to
+          the beats of Hollywood and Bollywood music.
+        </p>
+        <p>
+          Group Classes include: ABT, Core, Functional Fit, Yoga, Spinning, Step
+          Aerobics, Pilates, Zumba, Bollywood Dance, Kick Boxing, and more.
+        </p>
+      </div>
+
+      <div class="center">
+        <img src="images/excercise3.jpg" alt="" />
+        <p>
+          We provide you Personal Training by Certified and Experienced trainers
+          who will guide you through specialized programs.
+        </p>
+        <p>
+          Personal trainers guide, motivate and ensure that you follow a strict
+          fitness regime as designed by the personal trainer exclusively for
+          you. Trainers are certified by ACE , ACSM , REEBOK , ISSA, NASM.
+        </p>
+      </div>
+
+      <div class="right1">
+        <img src="images/excercise4.jpg" alt="" />
+        <p>
+          These are designed around your body’s natural movement, and are a
+          great way to push yourself that extra bit during a workout.
+        </p>
+        <p>
+          It is more effective than training with fixed machines, freestyle
+          training builds strength, speed, endurance, and flexibility.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
